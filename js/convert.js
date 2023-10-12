@@ -12,17 +12,8 @@ let list = [
 
 // 转换后的结果data.json所示
 
-async function convert(list) {
-  const dfs = (item) => {
-    const children = list.filter((ele) => ele.parentId === item.id);
-    return { ...item, children: children.map((child) => dfs(child)) };
-  };
-  return dfs({ id: 0 });
+function convert(list) {
 }
-convert(list).then((result) => {
-  const fs = require("fs");
-  // fs.writeFileSync("./data.json", JSON.stringify(result));
-});
 async function async1() {
   console.log("async1 start");//2
   await async2();

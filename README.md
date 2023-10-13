@@ -1,6 +1,6 @@
 # 什么是BFC?
-# css选择器有哪些，请按照优先级排列
-# 说出以下代码的运行结果
+# css选择器有哪些，样式的优先级是如何排列的
+# 说出以下代码的运行结果，解释一下有哪些方法属于宏任务，哪些属于微任务
 
 ```js
 async function async1() {
@@ -24,6 +24,10 @@ new Promise(function (resolve) {
 });
 console.log("script end");
 ```
+# 从输入url到页面渲染，浏览器经历了哪些流程
+
+# js中对象是如何实现继承的和es6的class继承方式有什么区别
+
 
 # 根据要求补充webpack.config.js文件
 技术栈为react,less,es6,静态资源有字体文件和svg文件,注意考虑一些性能优化
